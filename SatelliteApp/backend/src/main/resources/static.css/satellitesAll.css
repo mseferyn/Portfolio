@@ -1,0 +1,182 @@
+body {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+#body {
+    padding:10px;
+    padding-bottom:50px;   /* Height of the footer + 10px */
+}
+
+#body_add {
+    padding:10px;
+    padding-bottom:50px;   /* Height of the footer + 10px */
+    background: #f9f9f9;
+    font-family: "Courier New", Courier, monospace;
+}
+
+#container {
+    min-height:100%;
+    position:relative;
+}
+
+table {
+    border: solid #ffffff 0px;
+    box-shadow: 2px 2px 20px 2px rgb(0 0 0 / 21%);
+    font-family: system-ui;
+    width: 50%;
+    /* font-family: Tahoma, Geneva, sans-serif; */
+    font-weight: 500;
+    color: #0000009e;
+    margin-bottom: 30px;
+}
+
+table, td, th {
+    box-shadow: 2px 2px 20px 2px rgb(226 226 226 / 36%);
+    border-collapse: collapse;
+    font-weight: 500;
+    border: solid #ffffff 1px;
+    padding: 5px;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-weight: ;
+    font-stretch: ;
+    font-size: ;
+    font-family: ;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    margin: 0em;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+table td input, table td select, table td textarea {
+    width: 98%;
+    height: 35px;
+    border: solid #25252582 1px;
+    padding-left: 15px;
+    font-family: Verdana, Geneva, sans-serif;
+    box-shadow: inset 3px 3px 5px 0px rgb(210 210 210 / 93%);
+    outline: none;
+}
+
+#header {
+    text-align: center;
+    background:#0cd6ae;
+    color: white;
+    padding:10px;
+    font-size: 15px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    box-shadow: inset 0px 0px 10px 8px rgb(22 180 149 / 93%), 0px 0px 10px 8px rgb(0 0 0 / 23%);
+}
+
+.header-right {
+    float: right;
+    font-size: 15px;
+}
+
+.header-right a:link, a:visited{
+      background-color: white;
+      color: black;
+      border: 2px solid green;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+}
+
+.header-right a:hover, a:active{
+      background-color: #484848;
+      color: white;
+}
+
+.param { /*items*/
+    text-align: left;
+    font-size: 14px;
+    padding:0px 5px 0px 5px; /* top, right, bottom and left  */
+    font-family: "Arial"
+}
+
+#footer { /*STOPKA OFC*/
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:50px;   /* Height of the footer */
+    background: rgb(126, 126, 138);
+    vertical-align:middle;
+    padding:0px 0px 0px 0px; /* top, right, bottom and left  */
+}
+
+.footertxt {
+    padding:0px 0px 0px 10px; /* top, right, bottom and left  */
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(30, 143, 255, 0);
+}
+
+.flex-container > div {
+    background-color: #f1f1f100;
+    width: auto;
+    margin: 10px;
+    border-style: solid;
+    border-top:    -1px  rgba(255, 255, 0, 0);
+    border-right:  -1px rgb(0, 0, 0);
+    border-bottom: -1px rgb(0, 0, 0);
+    border-left:   -1px rgb(0, 0, 0);
+    box-shadow: 0px 0px 4px 2px rgb(0 0 0 / 23%);
+}
+
+.flex-container > div:hover{
+      background-color: #ececec;
+      color: black;
+}
+
+.flex-container a:link, a:visited{
+    font-size: 14px;
+    font-family: "Arial";
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+    padding: 4px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+}
+
+.flex-container a:hover, a:active{
+      background-color: #484848;
+      color: white;
+}

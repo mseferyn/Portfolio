@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>List of satellites from database</title>
+    <link rel="stylesheet" type="text/css" media="all"
+          href="/css/satellitesAll.css" th:href="@{/css/satellitesAll.css}"/>
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <h1>
+            Satellites
+        </h1>
+    </div>
+    <div id="body_add">
+        <form action="#" method="post" th:action="@{/satellites/add}" th:object="${satelliteToAdd}">
+            <table align="center">
+                <tbody>
+
+                <tr>
+                    <td>
+                        ID <input type="text" name="id" th:filed="*{objectId}" th:value="0" placeholder="Object ID">
+                        <p class="alert alert-danger" th:if="${#fields.hasErrors('objectId')}" th:errors="*{objectId}">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Name
+                        <input type="text" name="name" th:filed="*{objectName}" placeholder="Name of satellite">
+                        <p class="alert alert-danger" th:if="${#fields.hasErrors('objectName')}" th:errors="*{objectName}">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Norad ID
+                        <input type="text" name="NORADCatId" th:filed="*{NORADCatId}" placeholder="NORAD id">
+                        <p class="alert alert-danger" th:if="${#fields.hasErrors('NORADCatId')}" th:errors="*{NORADCatId}">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Country
+                        <input type="text" name="CountryCode" th:filed="*{CountryCode}" placeholder="NORAD id">
+                        <p class="alert alert-danger" th:if="${#fields.hasErrors('CountryCode')}" th:errors="*{CountryCode}">
+                    </td>
+                </tr>
+                <!--                <tr>-->
+                <!--                    <td>-->
+                <!--                        <button type="submit" name="submit" th:value="Submit">Add metal object</button>-->
+                <!--                        <button type="button" name="cancel" th:onclick="window.history.back()">Cancel</button>-->
+                <!--                    </td>-->
+                <!--                </tr>-->
+                </tbody>
+            </table>
+        </form>
+    </div>
+    <div id="footer">
+        <footer>
+            <p class="footertxt">Tomasz Rudnicki @2021</p>
+        </footer>
+    </div>
+</div>
+</body>
+</html>

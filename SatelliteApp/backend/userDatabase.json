@@ -1,0 +1,72 @@
+[
+  {
+    "ID": "1",
+    "NAME": "FirstName",
+    "PASSWORD": "EditedPassword",
+    "EMAIL": "tomasz.rudnicki@onet.pl",
+    "COORDINATES": [
+      "59.0",
+      "9.67"
+    ],
+    "FAVOURITES": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "ID": "2",
+    "NAME": "SecondName",
+    "PASSWORD": "haslo",
+    "EMAIL": "tomkotron@gmail.com",
+    "COORDINATES": [
+      "28.9",
+      "74.0"
+    ],
+    "FAVOURITES": [
+      "3",
+      "4"
+    ]
+  },
+  {
+    "ID": "3",
+    "NAME": "TrzecieImie",
+    "PASSWORD": "NeuPass",
+    "EMAIL": "tomkotron@gmail.com",
+    "COORDINATES": [
+      "28.9",
+      "74.0"
+    ],
+    "FAVOURITES": [
+      "1",
+      "4"
+    ]
+  }
+  {
+    "ID": "1",
+    "NAME": "FirstName",
+    "PASSWORD": "EditedPassword",
+    "EMAIL": "tomasz.rudnicki@onet.pl",
+    "COORDINATES": [
+      "59.0",
+      "9.67"
+    ],
+    "FAVOURITES": [
+      "1",
+      "2"
+    ]
+  }
+  {
+    "ID": "2",
+    "NAME": "SecondName",
+    "PASSWORD": "haslo",
+    "EMAIL": "tomkotron@gmail.com",
+    "COORDINATES": [
+      "28.9",
+      "74.0"
+    ],
+    "FAVOURITES": [
+      "3",
+      "4"
+    ]
+  }
+]

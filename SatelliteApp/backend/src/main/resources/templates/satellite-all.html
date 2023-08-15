@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>List of satellites from database</title>
+    <link rel="stylesheet" type="text/css" media="all"
+          href="/css/satellitesAll.css" th:href="@{/css/satellitesAll.css}"/>
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <h1>
+            Satellites
+        </h1>
+    </div>
+
+    <div id="body">
+        <div class="flex-container">
+            <div th:each="satellite: ${satellite}">
+                <p class="param"><b>ID:</b> <span th:utext="${satellite.objectId}"></span></p>
+                <p class="param"><b>Name:</b> <span th:text="${satellite.objectName}"></span></p>
+                <p class="param"><b>NORAD id:</b> <span th:text="${satellite.NORADCatId}"></span></p>
+                <p class="param"><b>Country:</b> <span th:text="${satellite.CountryCode}"></span></p>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <footer>
+            <p class="footertxt">Projekt zespołowy @2021</p>
+        </footer>
+    </div>
+</div>
+
+</body>
+</html>
+
